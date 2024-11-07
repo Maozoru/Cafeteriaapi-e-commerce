@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PulposCafe - Catálogo de Cafés</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Catálogo de Cafés</h1>
+        <nav>
+            <input type="search" id="search-bar" placeholder="Buscar café..." oninput="buscarProducto()" />
+            <a href="index.html">Inicio</a>
+            <a href="carrito.html"><i class="fas fa-shopping-cart"></i> Carrito</a>
+        </nav>
+    </header>
+
+    <section id="productos">
+        <h2>Todos los productos</h2>
+        <div id="productos-lista"></div>
+    </section>
+
+    <div id="notificacion" class="notificacion">
+        <p>Café en camino!</p>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 MaoCafe</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

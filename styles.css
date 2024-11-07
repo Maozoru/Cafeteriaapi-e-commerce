@@ -1,0 +1,202 @@
+/* Resetear márgenes y relleno para un diseño más limpio */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f3f1;
+    color: #3e2a47;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Estilo para el header */
+header {
+    background-color: #f7c1d7;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    color: #3e2a47;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+/* Barra de navegación */
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #3e2a47;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #f7a8c8;
+}
+
+nav input[type="search"] {
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 25px;
+    border: 2px solid #f7c1d7;
+    margin: 0;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+nav input[type="search"]:focus {
+    border-color: #b56b56;
+}
+
+nav i.fas {
+    font-size: 1.5rem;
+    color: #3e2a47;
+    transition: color 0.3s ease;
+}
+
+nav i.fas:hover {
+    color: #f7a8c8;
+}
+
+/* Estilo de las secciones */
+section {
+    margin: 20px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+h2 {
+    color: #b56b56;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+/* Estilo para la sección de productos */
+#productos-aleatorios, #productos-lista {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+.producto {
+    background-color: #fff5f5;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 100%;
+    max-width: 250px;
+}
+
+.producto:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.producto img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.producto h3 {
+    color: #b56b56;
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+.producto p {
+    color: #a65252;
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+.producto button {
+    background-color: #f7a8c8;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.producto button:hover {
+    background-color: #b56b56;
+}
+
+/* Estilo para los botones de Vaciar y Comprar */
+#vaciar-carrito, #comprar-carrito {
+    background-color: #ff7043;
+    color: #fff;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    margin: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#vaciar-carrito:hover, #comprar-carrito:hover {
+    background-color: #b56b56;
+}
+
+/* Footer */
+footer {
+    background-color: #f7c1d7;
+    padding: 10px;
+    text-align: center;
+    color: #3e2a47;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+footer p {
+    font-size: 0.9rem;
+    color: #a65252;
+}
+
+/* Estilo para la notificación */
+.notificacion {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #FFBB33; /* Color naranja pastel */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    display: none; /* Inicialmente oculto */
+    z-index: 9999;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Efecto de aparición y desaparición */
+@keyframes mostrarNotificacion {
+    0% { opacity: 0; transform: translateX(-50%) translateY(20px); }
+    50% { opacity: 1; transform: translateX(-50%) translateY(0); }
+    100% { opacity: 0; transform: translateX(-50%) translateY(20px); }
+}
