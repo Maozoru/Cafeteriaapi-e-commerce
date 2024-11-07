@@ -183,7 +183,7 @@ footer p {
     position: fixed;
     bottom: 20px;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translateX(-20%);
     background-color: #FFBB33; /* Color naranja pastel */
     color: white;
     padding: 10px 20px;
