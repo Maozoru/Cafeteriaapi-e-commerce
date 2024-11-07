@@ -181,7 +181,7 @@ function vaciarCarrito() {
 
 // Función para procesar la compra
 function comprarCarrito() {
-    alert("Compra realizada con éxito!"); // Muestra un mensaje de éxito
+    alert("¡Compra realizada con éxito!"); // Muestra un mensaje de éxito
     localStorage.removeItem('carrito'); // Elimina el carrito del localStorage
     mostrarCarrito(); // Actualiza la interfaz para reflejar el carrito vacío
 }
